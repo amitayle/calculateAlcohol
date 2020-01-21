@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-//xghfhdfgh
+                //maitay
                 double og = Integer.parseInt(sOG);
                 double fg = Integer.parseInt(sFG);
 
