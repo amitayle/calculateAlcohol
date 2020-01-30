@@ -42,16 +42,16 @@ public class MainActivity extends AppCompatActivity {
                 String sOG = etOG.getText().toString();
                 String sFG = etFG.getText().toString();
 
-                if(TextUtils.isEmpty(sOG) && sFG.matches("")){
+                if(TextUtils.isEmpty(sOG) || sFG.matches("")){
                     Toast.makeText(MainActivity.this,"אנא הכנס ערך",Toast.LENGTH_LONG).show();
                     return;
                 }
 
-                //maitay
+
                 double og = Integer.parseInt(sOG);
                 double fg = Integer.parseInt(sFG);
 
-                if (og < 1000 || fg < 1000 || fg > og){
+                if (og < 1000 || fg < 1000 || fg > og ){
                     Toast.makeText(MainActivity.this, "ערך לא תקין", Toast.LENGTH_SHORT).show();
                     return;
                 }
